@@ -11,33 +11,19 @@ import UniformTypeIdentifiers
 
 @main
 struct SyncHubApp: App {
+
     var body: some Scene {
-        DocumentGroup(editing: .itemDocument, migrationPlan: SyncHubMigrationPlan.self) {
-            ContentView()
+        #if os(macOS)
+        macOSLaunchScene()
+        #endif
+
+        #if os(iOS)
+        iOSLaunchScene()
+        #endif
+
+        // MARK: a shared DocumentGroup scene that handles the management of a HubEditDocument instance
+        DocumentGroup(newDocument: HubEditDocument(initialText: "hello")) { file in
+            HubManagementRootView(document: file.$document)
         }
     }
-}
-
-extension UTType {
-    static var itemDocument: UTType {
-        UTType(importedAs: "com.example.item-document")
-    }
-}
-
-struct SyncHubMigrationPlan: SchemaMigrationPlan {
-    static var schemas: [VersionedSchema.Type] = [
-        SyncHubVersionedSchema.self,
-    ]
-
-    static var stages: [MigrationStage] = [
-        // Stages of migration between VersionedSchema, if required.
-    ]
-}
-
-struct SyncHubVersionedSchema: VersionedSchema {
-    static var versionIdentifier = Schema.Version(1, 0, 0)
-
-    static var models: [any PersistentModel.Type] = [
-        Item.self,
-    ]
 }

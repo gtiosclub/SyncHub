@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		26F666CA2F2ED441006DC7C8 /* SyncHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F666CA2F2ED441006DC7C8 /* SyncHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SyncHub.app; path = /Users/stevenliu/Desktop/SyncHub/build/Debug/SyncHub.app; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		26F666D62F2ED442006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */ = {
+		26F667002F2FA72D006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +21,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		26F666CC2F2ED441006DC7C8 /* SyncHub */ = {
+		26F666FB2F2FA72D006DC7C8 /* SyncHub */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				26F666D62F2ED442006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */,
+				26F667002F2FA72D006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */,
 			);
 			path = SyncHub;
 			sourceTree = "<group>";
@@ -45,17 +45,8 @@
 		26F666C12F2ED441006DC7C8 = {
 			isa = PBXGroup;
 			children = (
-				26F666CC2F2ED441006DC7C8 /* SyncHub */,
-				26F666CB2F2ED441006DC7C8 /* Products */,
+				26F666FB2F2FA72D006DC7C8 /* SyncHub */,
 			);
-			sourceTree = "<group>";
-		};
-		26F666CB2F2ED441006DC7C8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				26F666CA2F2ED441006DC7C8 /* SyncHub.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,7 +65,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				26F666CC2F2ED441006DC7C8 /* SyncHub */,
+				26F666FB2F2FA72D006DC7C8 /* SyncHub */,
 			);
 			name = SyncHub;
 			packageProductDependencies = (
@@ -108,7 +99,7 @@
 			mainGroup = 26F666C12F2ED441006DC7C8;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 26F666CB2F2ED441006DC7C8 /* Products */;
+			productRefGroup = 26F666C12F2ED441006DC7C8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
