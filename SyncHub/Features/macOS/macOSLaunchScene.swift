@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if os(macOS)
 struct macOSLaunchScene: Scene {
     var body: some Scene {
         WindowGroup {
@@ -38,3 +39,4 @@ struct macOSHomeView: View {
 #Preview {
     macOSHomeView()
 }
+#endif

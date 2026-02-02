@@ -10,6 +10,9 @@ import SwiftUI
 
 struct PDFEntity: HubEntity {
     static var supportedTypes: [UTType] = [.pdf]
+
     var displayName: String
     var data: Data
+    var position: CGPoint
+    var scale: CGFloat
 }

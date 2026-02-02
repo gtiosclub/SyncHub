@@ -12,6 +12,8 @@ extension UTType {
     static var hubEditDocument = UTType(exportedAs: "com.gtiosclub.SyncHub.hub")
 }
 
+// MARK: This is the backing storage for a Canvas that contains all entities and their related information
+
 struct HubEditDocument: FileDocument {
     static var readableContentTypes: [UTType] { [.hubEditDocument] }
 

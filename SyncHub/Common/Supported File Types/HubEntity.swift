@@ -13,23 +13,29 @@ import UniformTypeIdentifiers
 
 protocol HubEntity {
     static var supportedTypes: [UTType] { get }
+
     var displayName: String { get }
     var data: Data { get }
+    var position: CGPoint { get }
+    var scale: CGFloat { get }
 
-    init(displayName: String, data: Data)
+    init(displayName: String, data: Data, position: CGPoint, scale: CGFloat)
 }
+
+// MARK: Convenience initializers
 
 extension HubEntity {
     init(data: Data) {
-        self.init(displayName: "Untitled", data: data)
+        self.init(displayName: "Untitled", data: data, position: CGPoint(x: 5, y: 5), scale: 1)
     }
 
     init(named: String = "Untitled") {
-        self.init(displayName: named, data: Data())
+        self.init(displayName: named, data: Data(), position: CGPoint(x: 5, y: 5), scale: 1)
     }
 }
 
 // MARK: A type-erasing wrapper for any concrete HubEntity type to be used in HubEditDocument
+
 struct AnyHubEntity {
     let contentType: UTType
     var entity: any HubEntity
@@ -51,7 +57,9 @@ extension AnyHubEntity: Codable {
 
     init(from decoder: any Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
+
         self.contentType = try values.decode(UTType.self, forKey: .contentType)
+
         let data = try values.decode(Data.self, forKey: .data)
 
         guard let entityType = Self.typeRegistry[contentType] else {

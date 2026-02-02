@@ -13,6 +13,7 @@ import UniformTypeIdentifiers
 struct SyncHubApp: App {
 
     var body: some Scene {
+
         #if os(macOS)
         macOSLaunchScene()
         #endif
