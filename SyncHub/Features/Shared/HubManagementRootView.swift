@@ -12,7 +12,7 @@ struct HubManagementRootView: View {
     @Binding var document: HubEditDocument
     
     var body: some View {
-        TextEditor(text: $document.text)
+        Text("Hub management root view")
 //        NavigationSplitView {
 //            List {
 //
@@ -36,6 +36,6 @@ struct HubManagementRootView: View {
 }
 
 #Preview {
-    @Previewable @State var hubEditDocument = HubEditDocument(initialText: "")
+    @Previewable @State var hubEditDocument = HubEditDocument()
     HubManagementRootView(document: $hubEditDocument)
 }

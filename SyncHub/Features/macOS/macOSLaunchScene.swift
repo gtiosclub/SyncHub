@@ -18,10 +18,20 @@ struct macOSLaunchScene: Scene {
 // MARK: macOS's HomeView that displays user's existing hubs
 
 struct macOSHomeView: View {
+    @Environment(\.newDocument) private var newDocument
+
     var body: some View {
         TabView {
 
         }
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button("New Document") {
+                    newDocument(HubEditDocument())
+                }
+            }
+        }
+
     }
 }
 

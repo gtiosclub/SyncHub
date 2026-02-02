@@ -15,24 +15,32 @@ extension UTType {
 struct HubEditDocument: FileDocument {
     static var readableContentTypes: [UTType] { [.hubEditDocument] }
 
-    var text = ""
+    var content: DocumentContent
+
+    var name: String { content.name }
+    var entities: [AnyHubEntity] { content.entities }
+
+    struct DocumentContent: Codable {
+        var name: String = "Untitled"
+        var entities: [AnyHubEntity] = []
+    }
 
     init(configuration: ReadConfiguration) throws {
         if let data = configuration.file.regularFileContents {
-            text = String(decoding: data, as: UTF8.self)
+            self.content = try JSONDecoder().decode(DocumentContent.self, from: data)
         } else {
             throw CocoaError(.fileReadCorruptFile)
         }
     }
     
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        let data = Data(text.utf8)
+        let data = try JSONEncoder().encode(content)
         return FileWrapper(regularFileWithContents: data)
     }
 }
 
 extension HubEditDocument {
-    init(initialText: String = "") {
-        self.text = initialText
+    init() {
+        content = DocumentContent()
     }
 }

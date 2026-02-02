@@ -22,8 +22,9 @@ struct SyncHubApp: App {
         #endif
 
         // MARK: a shared DocumentGroup scene that handles the management of a HubEditDocument instance
-        DocumentGroup(newDocument: HubEditDocument(initialText: "hello")) { file in
+        DocumentGroup(newDocument: HubEditDocument()) { file in
             HubManagementRootView(document: file.$document)
         }
+
     }
 }
