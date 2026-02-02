@@ -3,7 +3,7 @@
 */project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 */project.xcworkspace/xcuserdata
 */xcuserdata/
-*.plist
+GoogleService-Info.plist
 
 # Xcode
 #
