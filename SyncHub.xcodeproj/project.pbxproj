@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		26F666CA2F2ED441006DC7C8 /* SyncHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F667732F310001006DC7C8 /* SyncHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		26F666D62F2ED442006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */ = {
+		26F667002F2FA72D006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +21,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		26F666CC2F2ED441006DC7C8 /* SyncHub */ = {
+		26F666FB2F2FA72D006DC7C8 /* SyncHub */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				26F666D62F2ED442006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */,
+				26F667002F2FA72D006DC7C8 /* Exceptions for "SyncHub" folder in "SyncHub" target */,
 			);
 			path = SyncHub;
 			sourceTree = "<group>";
@@ -45,17 +45,9 @@
 		26F666C12F2ED441006DC7C8 = {
 			isa = PBXGroup;
 			children = (
-				26F666CC2F2ED441006DC7C8 /* SyncHub */,
-				26F666CB2F2ED441006DC7C8 /* Products */,
+				26F666FB2F2FA72D006DC7C8 /* SyncHub */,
+				26F667732F310001006DC7C8 /* SyncHub.app */,
 			);
-			sourceTree = "<group>";
-		};
-		26F666CB2F2ED441006DC7C8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				26F666CA2F2ED441006DC7C8 /* SyncHub.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,13 +66,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				26F666CC2F2ED441006DC7C8 /* SyncHub */,
+				26F666FB2F2FA72D006DC7C8 /* SyncHub */,
 			);
 			name = SyncHub;
 			packageProductDependencies = (
 			);
 			productName = SyncHub;
-			productReference = 26F666CA2F2ED441006DC7C8 /* SyncHub.app */;
+			productReference = 26F667732F310001006DC7C8 /* SyncHub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +100,7 @@
 			mainGroup = 26F666C12F2ED441006DC7C8;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 26F666CB2F2ED441006DC7C8 /* Products */;
+			productRefGroup = 26F666C12F2ED441006DC7C8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -145,7 +137,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 575PRHZ9KY;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -169,7 +161,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stevenliu.SyncHub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtiosClub.SyncHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -192,7 +184,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 575PRHZ9KY;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -216,7 +208,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stevenliu.SyncHub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtiosClub.SyncHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
