@@ -1,8 +1,8 @@
 //
-//  HomeView.swift
+//  macOSLaunchScene.swift
 //  SyncHub
 //
-//  Created by Steven Liu on 2/1/26.
+//  Created by Steven Liu on 2/7/26.
 //
 
 import SwiftUI
@@ -25,13 +25,7 @@ struct macOSHomeView: View {
         TabView {
 
         }
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                Button("New Document") {
-                    newDocument(HubEditDocument())
-                }
-            }
-        }
+
 
     }
 }
