@@ -15,7 +15,7 @@ extension UTType {
 
 /// Backing storage for a canvas
 ///   -  contains all content data stored in canvas
-struct CanvasDocument: FileDocument{
+struct CanvasDocument: FileDocument {
     // Define the document type this app loads.
     static var readableContentTypes: [UTType] { [.canvas] }
 

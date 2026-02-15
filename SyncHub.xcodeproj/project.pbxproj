@@ -31,7 +31,6 @@
 		26A62CC22F410F4E007CA1B1 /* Exceptions for "SyncHub" folder in "SyncHub" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"Features/3. Content Management/macOS/macOSLaunchScene.swift",
 				Info.plist,
 			);
 			target = 26F666C92F2ED441006DC7C8 /* SyncHub */;
