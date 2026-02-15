@@ -11,7 +11,7 @@
 			<string>Default</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.example.item-document</string>
+				<string>com.gtiosclub.SyncHub.canvas</string>
 			</array>
 			<key>NSUbiquitousDocumentUserActivityType</key>
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER).exampledocument</string>
@@ -26,16 +26,16 @@
 				<string>public.content</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>SyncHub Document</string>
+			<string>SyncHub Canvas</string>
 			<key>UTTypeIcons</key>
 			<dict/>
 			<key>UTTypeIdentifier</key>
-			<string>com.gtiosclub.SyncHub.hub</string>
+			<string>com.gtiosclub.SyncHub.canvas</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
-					<string>hub</string>
+					<string>canvas</string>
 				</array>
 			</dict>
 		</dict>
